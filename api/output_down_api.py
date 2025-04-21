@@ -150,7 +150,7 @@ for i in range(重试次数):
             loop = PromptServer.instance.loop
             logger.info(f"当前读取事件循环对象为:{循环}")
             logger.info(f"服务器事件循环对象为:{loop}")
-            gec.安装异步钩子(loop)
+            # gec.安装异步钩子(loop)
             loop.create_task(启动后台任务())
             logger.info("后台更新列表已启动")
 
